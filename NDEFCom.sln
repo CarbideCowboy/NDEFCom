@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDEFCom", "NDEFCom\NDEFCom.csproj", "{ECB40735-BF47-43B2-985A-7214DC9F1BEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECB40735-BF47-43B2-985A-7214DC9F1BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB40735-BF47-43B2-985A-7214DC9F1BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB40735-BF47-43B2-985A-7214DC9F1BEC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ECB40735-BF47-43B2-985A-7214DC9F1BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB40735-BF47-43B2-985A-7214DC9F1BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB40735-BF47-43B2-985A-7214DC9F1BEC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AD2DDD1-53AE-4657-BCC8-198265E70F37}
+	EndGlobalSection
+EndGlobal
