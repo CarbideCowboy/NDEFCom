@@ -3795,16 +3795,22 @@ namespace NDEFCom
 			public const int useLogo = 2131296441;
 			
 			// aapt resource value: 0x7F0900BA
-			public const int view_offset_helper = 2131296442;
+			public const int uxNdefEditor = 2131296442;
 			
 			// aapt resource value: 0x7F0900BB
-			public const int visible = 2131296443;
+			public const int uxScrollView = 2131296443;
 			
 			// aapt resource value: 0x7F0900BC
-			public const int withText = 2131296444;
+			public const int view_offset_helper = 2131296444;
 			
 			// aapt resource value: 0x7F0900BD
-			public const int wrap_content = 2131296445;
+			public const int visible = 2131296445;
+			
+			// aapt resource value: 0x7F0900BE
+			public const int withText = 2131296446;
+			
+			// aapt resource value: 0x7F0900BF
+			public const int wrap_content = 2131296447;
 			
 			static Id()
 			{
@@ -3987,82 +3993,82 @@ namespace NDEFCom
 			public const int abc_tooltip = 2131492891;
 			
 			// aapt resource value: 0x7F0C001C
-			public const int activity_ndefedit = 2131492892;
+			public const int browser_actions_context_menu_page = 2131492892;
 			
 			// aapt resource value: 0x7F0C001D
-			public const int activity_scanprompt = 2131492893;
+			public const int browser_actions_context_menu_row = 2131492893;
 			
 			// aapt resource value: 0x7F0C001E
-			public const int browser_actions_context_menu_page = 2131492894;
+			public const int design_bottom_navigation_item = 2131492894;
 			
 			// aapt resource value: 0x7F0C001F
-			public const int browser_actions_context_menu_row = 2131492895;
+			public const int design_bottom_sheet_dialog = 2131492895;
 			
 			// aapt resource value: 0x7F0C0020
-			public const int design_bottom_navigation_item = 2131492896;
+			public const int design_layout_snackbar = 2131492896;
 			
 			// aapt resource value: 0x7F0C0021
-			public const int design_bottom_sheet_dialog = 2131492897;
+			public const int design_layout_snackbar_include = 2131492897;
 			
 			// aapt resource value: 0x7F0C0022
-			public const int design_layout_snackbar = 2131492898;
+			public const int design_layout_tab_icon = 2131492898;
 			
 			// aapt resource value: 0x7F0C0023
-			public const int design_layout_snackbar_include = 2131492899;
+			public const int design_layout_tab_text = 2131492899;
 			
 			// aapt resource value: 0x7F0C0024
-			public const int design_layout_tab_icon = 2131492900;
+			public const int design_menu_item_action_area = 2131492900;
 			
 			// aapt resource value: 0x7F0C0025
-			public const int design_layout_tab_text = 2131492901;
+			public const int design_navigation_item = 2131492901;
 			
 			// aapt resource value: 0x7F0C0026
-			public const int design_menu_item_action_area = 2131492902;
+			public const int design_navigation_item_header = 2131492902;
 			
 			// aapt resource value: 0x7F0C0027
-			public const int design_navigation_item = 2131492903;
+			public const int design_navigation_item_separator = 2131492903;
 			
 			// aapt resource value: 0x7F0C0028
-			public const int design_navigation_item_header = 2131492904;
+			public const int design_navigation_item_subheader = 2131492904;
 			
 			// aapt resource value: 0x7F0C0029
-			public const int design_navigation_item_separator = 2131492905;
+			public const int design_navigation_menu = 2131492905;
 			
 			// aapt resource value: 0x7F0C002A
-			public const int design_navigation_item_subheader = 2131492906;
+			public const int design_navigation_menu_item = 2131492906;
 			
 			// aapt resource value: 0x7F0C002B
-			public const int design_navigation_menu = 2131492907;
+			public const int design_text_input_password_icon = 2131492907;
 			
 			// aapt resource value: 0x7F0C002C
-			public const int design_navigation_menu_item = 2131492908;
+			public const int mtrl_layout_snackbar = 2131492908;
 			
 			// aapt resource value: 0x7F0C002D
-			public const int design_text_input_password_icon = 2131492909;
+			public const int mtrl_layout_snackbar_include = 2131492909;
 			
 			// aapt resource value: 0x7F0C002E
-			public const int mtrl_layout_snackbar = 2131492910;
+			public const int NdefEdit = 2131492910;
 			
 			// aapt resource value: 0x7F0C002F
-			public const int mtrl_layout_snackbar_include = 2131492911;
+			public const int notification_action = 2131492911;
 			
 			// aapt resource value: 0x7F0C0030
-			public const int notification_action = 2131492912;
+			public const int notification_action_tombstone = 2131492912;
 			
 			// aapt resource value: 0x7F0C0031
-			public const int notification_action_tombstone = 2131492913;
+			public const int notification_template_custom_big = 2131492913;
 			
 			// aapt resource value: 0x7F0C0032
-			public const int notification_template_custom_big = 2131492914;
+			public const int notification_template_icon_group = 2131492914;
 			
 			// aapt resource value: 0x7F0C0033
-			public const int notification_template_icon_group = 2131492915;
+			public const int notification_template_part_chronometer = 2131492915;
 			
 			// aapt resource value: 0x7F0C0034
-			public const int notification_template_part_chronometer = 2131492916;
+			public const int notification_template_part_time = 2131492916;
 			
 			// aapt resource value: 0x7F0C0035
-			public const int notification_template_part_time = 2131492917;
+			public const int ScanPrompt = 2131492917;
 			
 			// aapt resource value: 0x7F0C0036
 			public const int select_dialog_item_material = 2131492918;

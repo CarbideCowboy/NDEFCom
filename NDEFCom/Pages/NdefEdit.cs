@@ -15,11 +15,18 @@ namespace NDEFCom.Pages
     [Activity(Label = "NdefEdit")]
     public class NdefEdit : Activity
     {
+        private string NdefPayload;
+        private EditText uxNdefEditor;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.activity_ndefedit);
+            SetContentView(Resource.Layout.NdefEdit);
+
+            NdefPayload = Intent.GetStringExtra("NdefPayload");
+
+            uxNdefEditor = FindViewById<EditText>(Resource.Id.uxNdefEditor);
+            uxNdefEditor.Text = NdefPayload;
         }
     }
 }

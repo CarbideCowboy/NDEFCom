@@ -99,7 +99,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\activity_ndefedit.xml">
+    <AndroidResource Include="Resources\layout\NdefEdit.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -110,7 +110,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\activity_scanprompt.xml">
+    <AndroidResource Include="Resources\layout\ScanPrompt.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

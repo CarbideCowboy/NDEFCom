@@ -14,7 +14,7 @@ using Android.Widget;
 
 namespace NDEFCom.Pages
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/Theme.AppCompat.DayNight.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", MainLauncher = true)]
     [IntentFilter(new[] { NfcAdapter.ActionNdefDiscovered}, Categories = new[] { Intent.CategoryDefault }, DataMimeType = "text/plain")]
     public class ScanPrompt : AppCompatActivity
     {
@@ -24,7 +24,7 @@ namespace NDEFCom.Pages
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
-            SetContentView(Resource.Layout.activity_scanprompt);
+            SetContentView(Resource.Layout.ScanPrompt);
 
             nfcDevice = NfcAdapter.GetDefaultAdapter(this);
 
@@ -35,6 +35,13 @@ namespace NDEFCom.Pages
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        private void PassNdefToEdit(string payload)
+        {
+            var intent = new Intent(this, typeof(NdefEdit));
+            intent.PutExtra("NdefPayload", payload);
+            StartActivity(intent);
         }
 
         protected override void OnResume()
@@ -77,7 +84,8 @@ namespace NDEFCom.Pages
                             if(record.Tnf == NdefRecord.TnfWellKnown)
                             {
                                 var payload = Encoding.ASCII.GetString(record.GetPayload());
-                                StartActivity(typeof(NdefEdit));
+                                payload = payload.Remove(0, 3);
+                                PassNdefToEdit(payload);
                             }
                         }
                     }
