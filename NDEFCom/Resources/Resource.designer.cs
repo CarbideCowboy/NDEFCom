@@ -3211,10 +3211,13 @@ namespace NDEFCom
 			public const int notify_panel_notification_icon_bg = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int tooltip_frame_dark = 2131165304;
+			public const int plus = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int tooltip_frame_light = 2131165305;
+			public const int tooltip_frame_dark = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int tooltip_frame_light = 2131165306;
 			
 			static Drawable()
 			{
@@ -3804,25 +3807,28 @@ namespace NDEFCom
 			public const int useLogo = 2131296441;
 			
 			// aapt resource value: 0x7F0900BA
-			public const int uxClearButton = 2131296442;
+			public const int uxAddButton = 2131296442;
 			
 			// aapt resource value: 0x7F0900BB
-			public const int uxNdefEditor = 2131296443;
+			public const int uxClearButton = 2131296443;
 			
 			// aapt resource value: 0x7F0900BC
-			public const int uxScrollView = 2131296444;
+			public const int uxNdefEditor = 2131296444;
 			
 			// aapt resource value: 0x7F0900BD
-			public const int view_offset_helper = 2131296445;
+			public const int uxScrollView = 2131296445;
 			
 			// aapt resource value: 0x7F0900BE
-			public const int visible = 2131296446;
+			public const int view_offset_helper = 2131296446;
 			
 			// aapt resource value: 0x7F0900BF
-			public const int withText = 2131296447;
+			public const int visible = 2131296447;
 			
 			// aapt resource value: 0x7F0900C0
-			public const int wrap_content = 2131296448;
+			public const int withText = 2131296448;
+			
+			// aapt resource value: 0x7F0900C1
+			public const int wrap_content = 2131296449;
 			
 			static Id()
 			{
