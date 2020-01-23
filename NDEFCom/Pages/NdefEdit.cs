@@ -17,9 +17,6 @@ namespace NDEFCom.Pages
     {
         private string NdefPayload;
         private EditText uxNdefEditor;
-        private ImageButton uxClearButton;
-        private ScrollView uxScrollView;
-        private int previousScrollPosition;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -30,58 +27,10 @@ namespace NDEFCom.Pages
 
             //set up id's
             uxNdefEditor = FindViewById<EditText>(Resource.Id.uxNdefEditor);
-            uxClearButton = FindViewById<ImageButton>(Resource.Id.uxClearButton);
-            uxScrollView = FindViewById<ScrollView>(Resource.Id.uxScrollView);
-
-            //set up events
-            uxScrollView.ScrollChange += UxScrollView_ScrollChange;
-            uxClearButton.Click += UxClearButton_Click;
 
             uxNdefEditor.Text = NdefPayload;
 
             CheckEncrypted();
-        }
-
-        private void UxScrollView_ScrollChange(object sender, View.ScrollChangeEventArgs e)
-        {
-            if(previousScrollPosition < e.ScrollY)
-            {
-                HideButtons();
-                previousScrollPosition = e.ScrollY;
-            }
-
-            else if(previousScrollPosition > e.ScrollY)
-            {
-                ShowButtons();
-                previousScrollPosition = e.ScrollY;
-            }
-        }
-
-        private void ShowButtons()
-        {
-            uxClearButton.Visibility = Android.Views.ViewStates.Visible;
-        }
-
-        private void HideButtons()
-        {
-            uxClearButton.Visibility = Android.Views.ViewStates.Gone;
-        }
-
-        private void UxClearButton_Click(object sender, EventArgs e)
-        {
-            Android.App.AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-            AlertDialog alert = dialog.Create();
-            alert.SetTitle("Confirm");
-            alert.SetMessage("Are you sure you want to clear the current NDEF record?");
-            alert.SetButton("Yes", (c, ev) =>
-            {
-                uxNdefEditor.Text = "";
-            });
-            alert.SetButton2("No", (c, ev) =>
-            {
-                return;
-            });
-            alert.Show();
         }
 
         private void CheckEncrypted()

@@ -3807,28 +3807,22 @@ namespace NDEFCom
 			public const int useLogo = 2131296441;
 			
 			// aapt resource value: 0x7F0900BA
-			public const int uxAddButton = 2131296442;
+			public const int uxNdefEditor = 2131296442;
 			
 			// aapt resource value: 0x7F0900BB
-			public const int uxClearButton = 2131296443;
+			public const int uxScrollView = 2131296443;
 			
 			// aapt resource value: 0x7F0900BC
-			public const int uxNdefEditor = 2131296444;
+			public const int view_offset_helper = 2131296444;
 			
 			// aapt resource value: 0x7F0900BD
-			public const int uxScrollView = 2131296445;
+			public const int visible = 2131296445;
 			
 			// aapt resource value: 0x7F0900BE
-			public const int view_offset_helper = 2131296446;
+			public const int withText = 2131296446;
 			
 			// aapt resource value: 0x7F0900BF
-			public const int visible = 2131296447;
-			
-			// aapt resource value: 0x7F0900C0
-			public const int withText = 2131296448;
-			
-			// aapt resource value: 0x7F0900C1
-			public const int wrap_content = 2131296449;
+			public const int wrap_content = 2131296447;
 			
 			static Id()
 			{

@@ -9,8 +9,6 @@ using Android.Nfc;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
-using Android.Views;
-using Android.Widget;
 
 namespace NDEFCom.Pages
 {
@@ -19,7 +17,6 @@ namespace NDEFCom.Pages
     public class ScanPrompt : AppCompatActivity
     {
         private NfcAdapter nfcDevice;
-        private ImageButton uxAddButton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,17 +25,8 @@ namespace NDEFCom.Pages
             SetContentView(Resource.Layout.ScanPrompt);
 
             nfcDevice = NfcAdapter.GetDefaultAdapter(this);
-            uxAddButton = FindViewById<ImageButton>(Resource.Id.uxAddButton);
-            uxAddButton.Click += UxAddButton_Click;
 
             HandleNdefIntent(this.Intent);
-        }
-
-        private void UxAddButton_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(NdefEdit));
-            intent.PutExtra("NdefPayload", "");
-            StartActivity(intent);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
