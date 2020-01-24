@@ -55,7 +55,7 @@ namespace NDEFCom.Pages
                     ClipData clip = ClipData.NewPlainText("payload", NdefPayload);
                     clipboard.PrimaryClip = clip;
 
-                    Intent intent = Android.App.Application.Context.PackageManager.GetLaunchIntentForPackage("org.sufficientlysecure.keychain.debug");
+                    Intent intent = Android.App.Application.Context.PackageManager.GetLaunchIntentForPackage("org.sufficientlysecure.keychain");
 
                     if(intent != null)
                     {
