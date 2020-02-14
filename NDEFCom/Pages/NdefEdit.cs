@@ -28,15 +28,6 @@ namespace NDEFCom.Pages
 
             NdefPayload = Intent.GetStringExtra("NdefPayload");
 
-            //set up id's
-            uxNdefEditor = FindViewById<EditText>(Resource.Id.uxNdefEditor);
-            uxClearButton = FindViewById<ImageButton>(Resource.Id.uxClearButton);
-            uxScrollView = FindViewById<ScrollView>(Resource.Id.uxScrollView);
-
-            //set up events
-            uxScrollView.ScrollChange += UxScrollView_ScrollChange;
-            uxClearButton.Click += UxClearButton_Click;
-
             uxNdefEditor.Text = NdefPayload;
 
             CheckEncrypted();
