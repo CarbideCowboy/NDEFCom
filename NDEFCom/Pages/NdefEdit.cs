@@ -33,6 +33,7 @@ namespace NDEFCom.Pages
             CheckEncrypted();
         }
 
+        //this method checks for an encrypted payload
         private void CheckEncrypted()
         {
             if(NdefPayload.Length < 27)
